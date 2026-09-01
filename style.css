@@ -1,0 +1,183 @@
+/* General reset for layout consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Login Page Styling (Image A) */
+#login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f5f7;
+}
+
+.login-card {
+  background: #ffffff;
+  color: #333333;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.login-card p {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+.g_id_signin {
+  display: flex;
+  justify-content: center;
+}
+
+/* Visibility Helper */
+.hidden {
+  display: none !important;
+}
+
+/* 3D Application UI */
+#app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#menu {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+#menu button {
+  color: rgba(127, 255, 255, 0.75);
+  background: transparent;
+  outline: 1px solid rgba(127, 255, 255, 0.75);
+  border: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+/* Legend Styling (Image B) */
+#legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.gradient-bar {
+  width: 140px;
+  height: 14px;
+  /* Fixed invalid hex color #3as48 to valid green #38a169 */
+  background: linear-gradient(to right, #ef3022, #ffa500, #38a169);
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* 3D Element Tile Styling (Image B) */
+.element {
+  width: 130px;
+  height: 170px;
+  box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(127, 255, 255, 0.25);
+  text-align: center;
+  cursor: default;
+  position: absolute;
+  padding-top: 5px;
+}
+
+.element:hover {
+  box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.element .number {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.element .image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-top: 18px;
+}
+
+.element .details {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 0 4px;
+  line-height: 1.1;
+}
+
+/* Card Top Badges for Country and Age */
+.card-country {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-age {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Element Number (Periodic index 1 to 200) */
+.element .number {
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.75);
+}

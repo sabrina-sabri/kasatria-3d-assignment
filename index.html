@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasatria - 3D Periodic Table Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Identity Services Library -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+<!-- Three.js and Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/renderers/CSS3DRenderer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+</head>
+<body>
+
+  <!-- Login Landing Page (Image A) -->
+  <div id="login-container">
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+      
+      <!-- Google Sign-In Widget Container -->
+      <div id="g_id_onload"
+           data-client_id="874750723121-19n3eabkcdtai7cgtcbcfat7kiahvf9g.apps.googleusercontent.com"
+           data-callback="handleGoogleLogin">
+      </div>
+      <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-size="large"></div>
+    </div>
+  </div>
+
+  <!-- Main 3D Canvas Screen (Hidden by default) -->
+  <div id="app-container" class="hidden">
+<div id="menu">
+      <button id="table-btn">TABLE</button>
+      <button id="sphere-btn">SPHERE</button>
+      <button id="helix-btn">HELIX</button>
+      <button id="grid-btn">GRID</button>
+      <button id="reset-btn">RESET VIEW</button>
+    </div>
+
+<!-- Legend Indicator (Image B) -->
+    <div id="legend">
+      <span>LOW</span>
+      <div class="gradient-bar" title="Click to filter Net Worth tiers"></div>
+      <span>High</span>
+    </div>
+
+    <div id="canvas-container"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
